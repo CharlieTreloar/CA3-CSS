@@ -8,7 +8,7 @@
 
     <style>
       :root {
-        --base-font-color: rgb(255,255,255);
+        --base-font-color: rgb(255,255,253);
         --secondary-font-color: rgb(248,248,255);
         --emphasised-font: rgb(147,161,161);
 
@@ -26,8 +26,30 @@
       }
     </style>
 
-  </head>
+    </head>
+    /* Style the navigation menu */
+    .navbar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+       }
 
+    /* Navigation links */
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+      text-align: center; /* If you want the text to be centered */
+       }
+
+    /* Add a background color on mouse-over */
+    .navbar a:hover {
+      background-color: #000;
+        }
+  
   <body>
     <!-- Here is our main header that is used across all the pages of our website -->
   h1 {
@@ -41,9 +63,9 @@
     </header>
 
     <nav>
-      <ul>
+      <ol>
         <li><a href="#">Home</a></li> <li><a href="#">Our team</a></li>  <li><a href="#">Projects</a></li>  <li><a href="#">Contact</a></li>
-      </ul>
+      </ol>
 
        <!-- A Search form is another common non-linear way to navigate through a website. -->
 
